@@ -5,10 +5,9 @@
     constructor(container, fs, shawOS) {
       this.container = container;
       this.fs = fs;
-      this.packageContext = packageContext;
 
-      const html = window.getPackageFile('index.html');
-      const css = window.getPackageFile('style.css');
+      const html = window.getPackageFile('snake','index.html');
+      const css = window.getPackageFile('snake','style.css');
 
       if (!html || !css) {
         container.innerHTML = '<p style="color:red;">Error: Faltan archivos del paquete</p>';
@@ -177,3 +176,4 @@
   console.log('🐍 Snake Game instalado');
 
 })();
+
