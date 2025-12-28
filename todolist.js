@@ -1,5 +1,4 @@
-// todolist.js - Paquete para ShawOS APT
-// Guarda este archivo en: packages/todolist.js de tu servidor
+// todolist.js - Paquete para ShawOS SPM
 
 (function() {
   'use strict';
