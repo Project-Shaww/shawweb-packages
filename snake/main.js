@@ -2,13 +2,13 @@
   'use strict';
 
   class SnakeGame {
-    constructor(container, fs, shawOS, packageContext) {
+    constructor(container, fs, shawOS) {
       this.container = container;
       this.fs = fs;
       this.packageContext = packageContext;
 
-      const html = packageContext.getFile('index.html');
-      const css = packageContext.getFile('style.css');
+      const html = window.getPackageFile('index.html');
+      const css = window.getPackageFile('style.css');
 
       if (!html || !css) {
         container.innerHTML = '<p style="color:red;">Error: Faltan archivos del paquete</p>';
@@ -175,4 +175,5 @@
   if (!window.ShawOSPackages) window.ShawOSPackages = {};
   window.ShawOSPackages.snake = SnakeGame;
   console.log('🐍 Snake Game instalado');
+
 })();
