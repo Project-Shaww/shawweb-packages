@@ -1,0 +1,129 @@
+.snake-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.game-header {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #00ff41;
+}
+
+.score-panel {
+  display: flex;
+  justify-content: space-around;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.score-label {
+  color: #8892b0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.score-value {
+  color: #00ff41;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.game-canvas-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+#gameCanvas {
+  border: 3px solid #00ff41;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3), 0 0 40px rgba(0, 255, 65, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px 50px;
+  border-radius: 12px;
+  border: 2px solid #ff0066;
+  text-align: center;
+  display: none;
+  box-shadow: 0 0 30px rgba(255, 0, 102, 0.5);
+}
+
+.game-over h2 {
+  color: #ff0066;
+  margin: 0 0 10px 0;
+  font-size: 36px;
+  text-shadow: 0 0 10px rgba(255, 0, 102, 0.8);
+}
+
+.game-over p {
+  color: #8892b0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.game-controls {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 2px solid #00ff41;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.start-btn {
+  background: linear-gradient(135deg, #00ff41 0%, #00cc33 100%);
+  color: #0f2027;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 255, 65, 0.4), 0 0 20px rgba(0, 255, 65, 0.2);
+}
+
+.start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 255, 65, 0.6), 0 0 30px rgba(0, 255, 65, 0.3);
+}
+
+.start-btn:active {
+  transform: translateY(0);
+}
+
+.controls-info {
+  text-align: center;
+}
+
+.controls-info p {
+  color: #8892b0;
+  margin: 0;
+  font-size: 13px;
+}
