@@ -55,6 +55,7 @@
     async function run(args, context) {
         var func = args[0];
         var wallpaper = args[1];
+        if (args.length == 0) { return printHelp(context); }
         if (!func.startsWith('-')) {
             wallpaper = func;
             func = '-s';
