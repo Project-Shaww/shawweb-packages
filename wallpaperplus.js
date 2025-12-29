@@ -1,4 +1,6 @@
 (function () {
+    'use strict';
+    
     const WALLPAPER_KEY = 'shawos-wallpaper';
 
     function getCurrentWallpaper() {
@@ -77,4 +79,4 @@
     }
     
     window.registerCommand('wallpaperplus', run);
-})()
+})();
