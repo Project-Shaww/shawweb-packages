@@ -506,7 +506,10 @@
     }
 
     static appFileOpenerSettings() {
-      return appSettings()
+      return {
+        window: ['todolist', '✅ Lista de Tareas', '', 600, 700],
+        needsSystem: false
+      };
     }
   }
 
@@ -523,4 +526,5 @@
   console.log('🔍 Debug: TodoList.appSettings =', typeof TodoList.appSettings);
 
 })();
+
 
