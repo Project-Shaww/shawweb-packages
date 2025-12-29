@@ -9,14 +9,14 @@ Repositorio oficial de paquetes para **ShawOS** - El sistema operativo en el nav
 
 ##  Tabla de Contenidos
 
-- [¿Qué son los Paquetes de ShawOS?](#-qué-son-los-paquetes-de-shawos)
-- [Instalar Paquetes](#-instalar-paquetes)
-- [Formatos Soportados](#-formatos-soportados)
-- [Crear tu Propio Paquete](#-crear-tu-propio-paquete)
-- [Requisitos para Publicar](#-requisitos-para-publicar)
-- [Cómo Contribuir](#-cómo-contribuir)
-- [Pautas de la Comunidad](#-pautas-de-la-comunidad)
-- [Estructura del Repositorio](#-estructura-del-repositorio)
+- [¿Qué son los Paquetes de ShawOS?](#qué-son-los-paquetes-de-shawos)
+- [Instalar Paquetes](#instalar-paquetes)
+- [Formatos Soportados](#formatos-soportados)
+- [Crear tu Propio Paquete](#crear-tu-propio-paquete)
+- [Requisitos para Publicar](#requisitos-para-publicar)
+- [Cómo Contribuir](#cómo-contribuir)
+- [Pautas de la Comunidad](#pautas-de-la-comunidad)
+- [Estructura del Repositorio](#estructura-del-repositorio)
 
 ---
 
