@@ -13,10 +13,6 @@ Repositorio oficial de paquetes para **ShawOS** - El sistema operativo en el nav
 - [Instalar Paquetes](#instalar-paquetes)
 - [Formatos Soportados](#formatos-soportados)
 - [Crear tu Propio Paquete](#crear-tu-propio-paquete)
-- [Requisitos para Publicar](#requisitos-para-publicar)
-- [Cómo Contribuir](#cómo-contribuir)
-- [Pautas de la Comunidad](#pautas-de-la-comunidad)
-- [Estructura del Repositorio](#estructura-del-repositorio)
 
 ---
 
