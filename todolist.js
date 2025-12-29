@@ -504,6 +504,10 @@
         needsSystem: false
       };
     }
+
+    static appFileOpenerSettings() {
+      return appSettings()
+    }
   }
 
   // Registrar el paquete globalmente
@@ -519,3 +523,4 @@
   console.log('🔍 Debug: TodoList.appSettings =', typeof TodoList.appSettings);
 
 })();
+
