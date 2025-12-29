@@ -510,10 +510,12 @@
   if (!window.ShawOSPackages) {
     window.ShawOSPackages = {};
   }
-  
+
   window.ShawOSPackages.todolist = TodoList;
+  if (window.registerApp) {window.registerApp('todolist', TodoList, ['json'])}
   
   console.log('✅ Paquete TodoList instalado correctamente');
   console.log('📦 Usa: open-package todolist');
   console.log('🔍 Debug: TodoList.appSettings =', typeof TodoList.appSettings);
+
 })();
