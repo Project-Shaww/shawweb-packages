@@ -165,7 +165,7 @@
 
     static appSettings() {
       return {
-        window: ['snake', 'Snake Game', '', 500, 600],
+        window: ['snake', 'Snake Game', '', 500, 720],
         needsSystem: false
       };
     }
@@ -176,4 +176,5 @@
   console.log('🐍 Snake Game instalado');
 
 })();
+
 
