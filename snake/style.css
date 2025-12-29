@@ -10,6 +10,8 @@
   background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
 }
 
 .game-header {
@@ -132,3 +134,4 @@
   font-size: 13px;
 
 }
+
