@@ -1,7 +1,7 @@
 # ShawWeb Official Packages
 
 ![Estado](https://img.shields.io/badge/Estado-Activo-00D26A?style=flat-square&labelColor=1a1a1a)
-![Packages](https://img.shields.io/badge/Paquetes-Oficiales_de_la_comunidad-4CAF50?style=flat-square&labelColor=1a1a1a)
+![Packages](https://img.shields.io/badge/Paquetes-Oficiales_de_ShawOS-4CAF50?style=flat-square&labelColor=1a1a1a)
 
 Repositorio oficial de paquetes para **ShawOS** - El sistema operativo en el navegador.
 
