@@ -77,4 +77,4 @@
     }
     
     window.registerCommand('wallpaperplus', run);
-})
+})()
