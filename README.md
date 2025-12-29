@@ -491,16 +491,6 @@ shawweb-packages/
 
 ---
 
-##  Colaboradores
-
-Gracias a todos los que contribuyen a hacer ShawOS mejor:
-
-<!-- ALL-CONTRIBUTORS-LIST:START -->
-<!-- Aquí se listarán automáticamente los colaboradores -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
----
-
 ## Licencia
 
 Este repositorio es comunitario y de uso libre.
