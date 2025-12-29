@@ -24,10 +24,10 @@ Repositorio oficial de paquetes para **ShawOS** - El sistema operativo en el nav
 
 Los paquetes de ShawOS son **aplicaciones y comandos** que extienden la funcionalidad del sistema operativo. Pueden ser:
 
-- ** Aplicaciones GUI**: Ventanas interactivas con interfaz gráfica
-- ** Comandos de Terminal**: Utilidades de línea de comandos
-- ** Juegos**: Experiencias interactivas y divertidas
-- ** Herramientas**: Editores, calculadoras, gestores, etc.
+- **Aplicaciones GUI**: Ventanas interactivas con interfaz gráfica
+- **Comandos de Terminal**: Utilidades de línea de comandos
+- **Juegos**: Experiencias interactivas y divertidas
+- **Herramientas**: Editores, calculadoras, gestores, etc.
 
 ---
 
