@@ -7,7 +7,7 @@
             this.shawos = shawos;
 
             // Check if wallpaperplus command exists, if not try to install it
-            const isInstalled = this.shawos.processManager.execute('wallpaperplus');
+            const isInstalled = this.shawos.processManager.execute('wallpaperplus', [], this.commandExecuterHelperContext);
             if (!isInstalled.success) {
                 const terminal = this.shawos.appHandler.openAppByName('terminal');
                 if (terminal) {
