@@ -5,27 +5,19 @@
             this.container = container;
             this.fileSystem = fs;
             this.shawos = shawos;
-
-            // Check if wallpaperplus command exists, if not try to install it
-            const isInstalled = this.shawos.processManager.execute('wallpaperplus', [], this.shawos.hiddenTerminal.context);
-            if (!isInstalled.success) {
-                const terminal = this.shawos.appHandler.openAppByName('terminal');
-                if (terminal) {
-                    terminal.context.stdout('Instalando dependencia wallpaperplus...', 'info');
-                    // We run it async so we don't block, but for the check we assume if it fails it's missing
-                    // Actually the original code just ran spm i. 
-                    const t = this.shawos.processManager.execute('spm', ['i', 'wallpaperplus'], this.shawos.hiddenTerminal.context);
-                    this.shawos.windowManager.closeWindow('terminal');
-                    
-                    if (!t.success) { 
-                        this.shawos.windowManager.closeWindow('wallpaperplus-cli'); 
-                        return; 
-                    }
-                }
-            }
-
             this.render();
             this.loadHistory();
+        }
+
+        async checkDependencies() {
+            // Check if wallpaperplus command exists, if not try to install it
+            const isInstalled = await this.shawos.processManager.execute('wallpaperplus', [], this.shawos.hiddenTerminal.context);
+            if (!isInstalled.success) {
+                const t = await this.shawos.processManager.execute('spm', ['i', 'wallpaperplus-cli'], this.shawos.hiddenTerminal.context);
+                if (!t.success) {
+                    return;
+                }
+            }
         }
 
         render() {
@@ -201,6 +193,7 @@
             });
 
             btn.addEventListener('click', async() => {
+                await this.checkDependencies();
                 const val = input.value.trim();
                 if (!val) return;
 
@@ -214,7 +207,6 @@
                 
                 // Call the EXTERNAL command
                 const result = await this.shawos.processManager.execute('wallpaperplus', args, this.shawos.hiddenTerminal.context);
-                console.log(result);
                 if (result && result.success) {
                     btn.textContent = '¡Hecho!';
                     // Save history
