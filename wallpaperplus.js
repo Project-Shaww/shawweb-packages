@@ -316,4 +316,5 @@
 
     if (!window.ShawOSPackages) window.ShawOSPackages = {};
     window.ShawOSPackages.wallpaperplus = Wallpaperplus;
+    if (window.registerApp) {window.registerApp('wallpaperplus', Wallpaperplus, [])}
 })();
