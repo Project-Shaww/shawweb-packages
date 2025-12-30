@@ -14,7 +14,7 @@
                     terminal.context.stdout('Instalando dependencia wallpaperplus...', 'info');
                     // We run it async so we don't block, but for the check we assume if it fails it's missing
                     // Actually the original code just ran spm i. 
-                    const t = this.shawos.processManager.execute('spm', ['i', 'wallpaperplus']);
+                    const t = this.shawos.processManager.execute('spm', ['i', 'wallpaperplus'], this.shawos.commandExecuterHelperContext);
                     this.shawos.windowManager.closeWindow('terminal');
                     
                     if (!t.success) { 
